@@ -1,4 +1,5 @@
-@extends("layout.master")
+@extends('layouts.app')
+@section('content')
 @section("title","Notifiaciones")
 @section("content")
 @include("modals.alert-modal")
@@ -24,16 +25,11 @@
                     <button id="btn_send" class="button is-success">Enviar</button>
                 </p>
                 <p class="control">
-                    <a href="{{route('logout')}}">
-                        <button class="button is-danger" id="btn_cancel">
-                            Salir
-                        </button>
-                    </a>
+                    <button class="button is-ligh" id="btn_cancel">Cancelar</button>
                 </p>
             </div>
 
-
-
         </div>
     </section>
+@endsection
 @endsection
